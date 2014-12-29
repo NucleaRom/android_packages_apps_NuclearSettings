@@ -40,6 +40,7 @@
               android:defaultValue="false" />  
     </PreferenceCategory>
 
+    <!-- Screen off animation -->
     <com.nr.settings.preferences.SystemSettingIntListPreference
         android:key="screen_off_animation"
         android:title="@string/screen_off_animation_title"
@@ -48,5 +49,11 @@
         android:entryValues="@array/screen_off_animation_values"
         android:summary="%s"
         android:defaultValue="0" />
+
+     <!-- AOKP animation -->
+     <PreferenceScreen
+        android:key="aokp_animation"
+        android:title="@string/system_animation_title"
+        android:fragment="com.nr.settings.fragments.AnimationControls" />
 
 </PreferenceScreen>
