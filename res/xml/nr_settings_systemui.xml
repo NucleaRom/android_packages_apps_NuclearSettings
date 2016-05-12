@@ -27,4 +27,12 @@
         android:fragment="com.nr.settings.fragments.RecentsSettings"
         android:icon="@drawable/ic_settings_recents"/>
 
+    <!-- gesture_anywhere -->
+    <PreferenceScreen
+        android:key="gesture_anywhere"
+        android:fragment="com.nr.settings.gestureanywhere.GestureAnywhereSettings"
+        android:title="@string/gesture_anywhere_title" 
+        android:icon="@drawable/ic_settings_gesture_anywhere" >
+    </PreferenceScreen>
+    
 </PreferenceScreen>
