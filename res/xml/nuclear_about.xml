@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2018 NucleaRom
+ 
+      Licensed under the Apache License, Version 2.0 (the "License");
+      you may not use this file except in compliance with the License.
+      You may obtain a copy of the License at
+ 
+           http://www.apache.org/licenses/LICENSE-2.0
+ 
+      Unless required by applicable law or agreed to in writing, software
+      distributed under the License is distributed on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+      See the License for the specific language governing permissions and
+      limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        android:title="@string/about_nr_settings_title" >
+
+    <Preference
+        android:key="all_nr"
+        android:title="@string/all_nr"
+        android:icon="@drawable/nuclear_all_icon" />
+
+    <PreferenceCategory
+        android:key="rom_status"
+        android:title="@string/nuclear_status" />
+
+        <!-- NucleaRom version -->
+        <Preference
+            android:key="mod_version"
+            android:title="@string/nr_mod_version"
+            android:summary="@string/nr_version_default"
+            android:icon="@drawable/ic_settings_nr" />
+
+        <!-- Build date -->
+        <org.lineageos.internal.preference.deviceinfo.LineageBuildDatePreference
+            android:key="build_date"
+            android:icon="@drawable/nuclear_buildate_icon" />
+
+        <!-- Changelog -->
+        <PreferenceScreen 
+            android:key="changelog"
+            android:title="@string/changelog_nuclear_title"
+            android:icon="@drawable/nuclear_changelog_icon"
+            android:summary="@string/changelog_nuclear_summary"
+            android:fragment="com.nr.settings.fragments.Changelog" />
+            
+
+    <PreferenceCategory
+        android:key="links"
+        android:title="@string/nr" />
+
+        <!-- NR SiteWeb -->
+        <Preference
+            android:key="nuclear_web"
+            android:title="@string/nuclear_web_title"
+            android:summary="@string/nuclear_web_summary"
+            android:icon="@drawable/nuclear_web_icon"/>
+
+        <!-- sources github -->
+        <Preference
+            android:key="nr_source"
+            android:title="@string/nr_source_title"
+            android:summary="@string/nr_source_summary"
+            android:icon="@drawable/nuclear_source_icon" />
+
+        <Preference
+            android:key="nr_sourcebase"
+            android:title="@string/nr_sourcebase"
+            android:summary="@string/nr_sourcebase_sumary"
+            android:icon="@drawable/nuclear_sourcebase_icon" />
+
+        <!-- Pagina para donaciones -->
+        <Preference
+            android:key="nr_donate"
+            android:title="@string/nr_donate_title"
+            android:summary="@string/nr_donate_summary"
+            android:icon="@drawable/nuclear_donate_icon" />
+
+        <!-- Logcat or GTFO -->
+        <PreferenceScreen
+            android:key="drill"
+            android:icon="@drawable/nuclear_drill_icon"
+            android:fragment="com.nr.settings.fragments.NuclearDrill"
+            android:title="@string/nuclear_drill_title"
+            android:summary="@string/drill_summary" />   
+
+ 
+
+        <PreferenceCategory
+            android:key="devs"
+            android:title="@string/devs_title" />
+
+            <PreferenceScreen android:key="moludo"
+                android:title="@string/moludo"
+                android:icon="@drawable/nuclear_dev_two_icon"
+                android:summary="@string/moludo_summary"/>
+
+            <PreferenceScreen android:key="acuicultor"
+                android:title="@string/acuicultor"
+                android:icon="@drawable/nuclear_dev_three_icon"
+                android:summary="@string/acuicultor_summary"/>
+
+            <PreferenceScreen android:key="ordenkrieger"
+                android:title="@string/ordenkrieger"
+                android:icon="@drawable/nuclear_dev_four_icon"
+                android:summary="@string/ordenkrieger_summary"/>
+
+            <PreferenceScreen android:key="lozo"
+                android:title="@string/lozo"
+                android:icon="@drawable/nuclear_dev_one_icon"
+                android:summary="@string/lozo_summary"/>
+
+</PreferenceScreen>

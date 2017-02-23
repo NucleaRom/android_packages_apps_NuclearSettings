@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018      NucleaRom
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp" 
+    android:viewportHeight="697.0"
+    android:viewportWidth="697.0" 
+	android:tint="?android:attr/colorControlNormal">
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M335.6,0L356.7,0C413.7,1.4 470.3,16.9 519.8,45.2C574.4,76.1 620.3,122.1 651.2,176.7C670,209.7 683.3,245.8 690.4,283.1C694.2,302 695.5,321.4 697,340.6L697,355.6C695.6,375.3 694.2,395.1 690.2,414.5C677.2,482.5 643.2,546.3 594.1,595.1C543,646.5 475.4,681.2 403.8,692.4C390.2,694.8 376.3,695.5 362.6,697L333.5,697C323,695.6 312.4,695.3 301.9,693.7C236.2,685.2 173.2,657.2 122.8,614.2C95.6,591.2 72.1,564.1 53.1,534C21,483.1 2.7,423.8 0,363.7L0,330.6C1.4,308.6 4.3,286.8 9.6,265.4C22.8,211.4 49.3,160.8 85.9,119C126.7,72.2 180.2,36.6 239.2,17.3C270.3,7 302.9,1.5 335.6,0M323.5,60.8C300.5,62.8 277.7,67.4 255.8,74.9C211.2,89.9 170.5,116.1 138.3,150.3C107.2,183.3 83.9,223.6 71.2,267.1C58.1,311.7 56.1,359.4 65.1,405C74.4,452.3 96.1,497 127.2,533.9C170.5,585.5 232.3,621.3 298.8,632.7C345.8,640.9 394.9,637.2 440.1,621.8C501.8,601.1 555.9,558.8 591,504C611.2,472.8 625.1,437.6 631.8,401C640.5,354.1 637.4,305 622.7,259.6C602.4,196.4 559.5,141 503.6,105.3C450.7,71.1 386.3,55.3 323.5,60.8Z"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M458.2,122.1C489.7,137.6 518.3,159.2 540.8,186.2C552.9,200.6 563.3,216.3 572,233C581,250.9 587.5,270 592.4,289.5C596.4,305.7 599.5,322.3 600.2,339C600.4,346.8 600.3,354.8 598.2,362.3C543.1,359.9 487.9,357.4 432.8,355C433.6,337.7 431,319.8 422.5,304.6C414,289.1 400.3,277 384.9,268.6C390.6,256.2 397,244.2 403.1,232C421.4,195.3 439.8,158.7 458.2,122.1Z"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M115.6,251.7C138.7,195.9 182.8,149 237.2,122.7C248.8,143.1 259,164.2 269.8,185C283.7,212.8 298.1,240.4 311,268.6C294.2,277.9 279.3,291.5 271.2,309.2C264.5,323.4 262.5,339.4 263.4,355C208,357.4 152.5,359.9 97.1,362.4C94.5,324.7 101,286.5 115.6,251.7Z"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M340.6,289.8C354,288 368,291.1 379.3,298.7C392.5,307.5 401.6,322.1 403.6,337.9C405.4,350.8 402.4,364.3 395.3,375.3C387.9,386.8 376.2,395.5 363,399.1C348.8,403.1 333.1,401.2 320.3,393.8C307.6,386.5 298,374.2 294.1,360C290.1,345.6 292.1,329.6 299.8,316.8C308.4,302.2 323.8,291.9 340.6,289.8Z"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M206.7,555.7C237.4,508.6 268.2,461.7 299,414.7C313.2,424 329.9,429.8 347,429.9C364.8,430.2 382.4,424.3 397.2,414.6C427.9,461.5 458.6,508.4 489.3,555.2C458.3,578.6 420.5,592.3 382.1,597.4C321.2,605.6 256.9,591.5 206.7,555.7Z"/>
+</vector>

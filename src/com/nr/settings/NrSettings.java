@@ -52,6 +52,7 @@ import com.nr.settings.tabs.StatusBarSettings;
 import com.nr.settings.tabs.LockScreenSettings;
 import com.nr.settings.tabs.ButtonSettings;
 import com.nr.settings.tabs.MiscSettings;
+import com.nr.settings.tabs.About;
 import com.nr.settings.PagerSlidingTabStrip;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -177,6 +178,7 @@ public class NrSettings extends SettingsPreferenceFragment {
             frags[2] = new LockScreenSettings();
             frags[3] = new ButtonSettings();
             frags[4] = new MiscSettings();
+            frags[5] = new About();
         }
 
         @Override
@@ -203,7 +205,8 @@ public class NrSettings extends SettingsPreferenceFragment {
                     getString(R.string.statusbar_title),
                     getString(R.string.lockscreen_title),
                     getString(R.string.button_title),
-                    getString(R.string.misc_title)};
+                    getString(R.string.misc_title),
+                    getString(R.string.about_title)};
         return titleString;
     }
 } 

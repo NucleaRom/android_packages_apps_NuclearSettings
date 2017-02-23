@@ -22,6 +22,7 @@
     <string name="lockscreen_title">Lock Screen</string>
     <string name="button_title">Buttons</string>
     <string name="misc_title">Miscellaneous</string>
+    <string name="about_title">NuclearZone</string>
 
     <!-- Categorys -->
     <string name="recents_category">Recents</string>
@@ -306,5 +307,47 @@
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
     <!-- QS Transparency -->
     <string name="qs_panel_alpha_title">Transparency</string>
-   
+
+    <!-- About NucleaRomReborn -->
+    <string name="about_nr_settings_title">NucleaRom</string>
+    <string name="all_nr">All About NucleaRom</string>
+    <string name="nr_donate_title">Contribute a donation to the NucleaRom</string>
+    <string name="nr_donate_summary">Support to NucleaRom</string>
+    <string name="github_tn">https://github.com/NucleaRom</string>
+    <string name="nr">Links</string>
+    <string name="nr_kernel_title">Kernel Website</string>
+    <string name="nr_kernel_summary">Mas informacion acerca del kernel</string>
+    <string name="nr_forum_title">NucleaRom ForumSite</string>
+    <string name="nr_forum_summary">Check the last downloads</string>
+    <string name="nr_source_title">Github</string>
+    <string name="nr_source_summary">NucleaRom Sources</string>
+    <string name="sourcebase_title">Source Base</string>
+    <string name="title_about">About NucleaRom</string>
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_title_summary">Check the changelog</string>
+    <string name="team_nuclear">NuclearTeam Members</string>
+    <string name="moludo">Moludo</string>
+    <string name="moludo_summary">● Founder \n● Developer \n● Maintainer</string>
+    <string name="lozo">Lozo</string>
+    <string name="lozo_summary">● Developer \n● Maintainer </string>
+    <string name="acuicultor">Acuicultor</string>
+    <string name="acuicultor_summary">● Developer \n● Maintainer</string>
+    <string name="ordenkrieger">OrdenKrieger</string>
+    <string name="ordenkrieger_summary">● Developer \n● Maintainer \n● Designer</string>
+    <string name="devs_title">Nuclear People</string>
+    <string name="nr_sourcebase">LineageOS</string>
+    <string name="nr_sourcebase_sumary">https://github.com/LineageOS</string>
+    <string name="nuclear_web_title">Nuclear Web Site</string>
+    <string name="nuclear_web_summary">Main site of Nuclear Team, Visit us now!</string>
+    <string name="nuclear_status">NucleaRom Status</string>
+
+    <!-- Changelog -->
+    <string name="changelog_nuclear_title">Changelog on last Build</string>
+    <string name="changelog_nuclear_summary">See the last changes on the rom</string>
+    <string name="changelog_nr_error">Unable to load changelog</string>
+
+    <!-- The Drill -->
+    <string name="nuclear_drill_title">The drill</string>
+    <string name="drill_summary">Logcat or GTFO</string>
+
 </resources>
