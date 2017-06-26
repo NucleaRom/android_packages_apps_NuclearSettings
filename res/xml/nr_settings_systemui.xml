@@ -34,5 +34,16 @@
         android:title="@string/gesture_anywhere_title" 
         android:icon="@drawable/ic_settings_gesture_anywhere" >
     </PreferenceScreen>
+
+    <!-- QS Panel -->
+    <PreferenceCategory
+        android:key="qs_panel"
+        android:title="@string/qs_category" />
+
+    <PreferenceScreen
+            android:id="@+id/qs_customizations"
+            android:title="@string/nr_qs_title"
+            android:fragment="com.nr.settings.fragments.QsPanel" 
+            android:icon="@drawable/nr_quick_settings_icon" />
     
 </PreferenceScreen>

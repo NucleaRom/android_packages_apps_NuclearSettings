@@ -31,6 +31,7 @@
     <string name="security_category">Security</string>
     <string name="stock_recents_category">Stock recents</string>
     <string name="alternative_recents_category">Alternative recents</string>
+    <string name="qs_category">QS Options</string>
 
     <!-- (!)Dialog -->
     <string name="nr_dialog_title">Help Us, Help You!!</string>
@@ -294,4 +295,8 @@
     <!-- IME switch -->
     <string name="ime_switcher_notify">Selector notification</string>
     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+
+    <!-- Qs Panel -->
+    <string name="nr_qs_title">Quick Settings Panel</string>
+   
 </resources>
