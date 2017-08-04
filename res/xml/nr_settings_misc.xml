@@ -45,6 +45,13 @@
               android:title="@string/toast_icon_title"
               android:summary="@string/toast_icon_summary"
               android:defaultValue="true" />
+
+        <!-- Sensor block per package -->
+        <com.nr.settings.preferences.SystemSettingSwitchPreference
+              android:key="sensor_block"
+              android:title="@string/sensor_block_title"
+              android:summary="@string/sensor_block_summary"
+              android:defaultValue="false" />
     </PreferenceCategory>
 
     <!-- Screen off animation -->
