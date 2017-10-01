@@ -1,4 +1,4 @@
-/*Copyright (C) 2015 The ResurrectionRemix Project
+/*Copyright (C) 2018 NucleaRom
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -19,9 +19,9 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 
-import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.nr.settings.R;
+import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
@@ -30,7 +30,7 @@ public class QsPanel extends SettingsPreferenceFragment implements
     private static final String TAG = "QsPanel";
 
     @Override
-    protected int getMetricsCategory() {
+    public int getMetricsCategory() {
         return MetricsEvent.APPLICATION;
     }
 

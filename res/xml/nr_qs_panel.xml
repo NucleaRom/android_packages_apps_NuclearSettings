@@ -20,9 +20,45 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/nr_qs_title">
 
-      <PreferenceCategory
-        android:title="@string/qs_tiles">
-   
-     </PreferenceCategory>
+    <PreferenceCategory
+        android:key="qs_layout_category"
+        android:title="@string/qs_layout_category_title">
+
+        <com.nr.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="5"
+            android:min="1"
+            settings:unitsLeft=""
+            settings:unitsRight=""
+            android:defaultValue="3" />
+
+        <com.nr.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="3"
+            android:min="1"
+            settings:unitsLeft=""
+            settings:unitsRight=""
+            android:defaultValue="2" />
+
+        <com.nr.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_columns_portrait"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="7"
+            android:min="1"
+            settings:unitsLeft=""
+            settings:unitsRight=""
+            android:defaultValue="3" />
+
+        <com.nr.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qs_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="9"
+            android:min="1"
+            settings:unitsLeft=""
+            settings:unitsRight=""
+            android:defaultValue="3" />
+    </PreferenceCategory>
 
 </PreferenceScreen>

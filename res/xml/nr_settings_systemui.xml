@@ -36,10 +36,6 @@
     </PreferenceScreen>
 
     <!-- QS Panel -->
-    <PreferenceCategory
-        android:key="qs_panel"
-        android:title="@string/qs_category" />
-
     <PreferenceScreen
             android:id="@+id/qs_customizations"
             android:title="@string/nr_qs_title"
