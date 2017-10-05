@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nr.settings.preference;
+package com.nr.settings.preferences;
 
 import android.content.ContentResolver;
 import android.preference.PreferenceDataStore;
