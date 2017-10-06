@@ -35,6 +35,7 @@ public class MasterSwitchPreference extends TwoTargetPreference {
     private Switch mSwitch;
     private boolean mChecked;
     private boolean mEnableSwitch = true;
+    private boolean mDefaultValue;
 
     public MasterSwitchPreference(Context context, AttributeSet attrs,
                                   int defStyleAttr, int defStyleRes) {
@@ -111,7 +112,7 @@ public class MasterSwitchPreference extends TwoTargetPreference {
 
     @Override
     protected Object onGetDefaultValue(TypedArray a, int index) {
-        return a.getBoolean(index, false);
+        return mDefaultValue = a.getBoolean(index, false);
     }
 
     @Override
@@ -125,5 +126,12 @@ public class MasterSwitchPreference extends TwoTargetPreference {
      */
     public void reloadValue() {
         setChecked(getPersistedBoolean(mChecked));
+    }
+
+    /**
+     * Get default value for external use.
+     */
+    public boolean getDefaultValue() {
+        return mDefaultValue;
     }
 }

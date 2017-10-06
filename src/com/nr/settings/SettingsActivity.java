@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 NucleaRom
+ * Copyright (C) 2017 NR
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.nr.settings.dslv.ActionListViewSettings;
 import com.nr.settings.tabs.SystemUISettings;
 import com.nr.settings.preferences.MasterSwitchPreference;
 import com.nr.settings.preferences.SystemSettingMasterSwitchPreference;
@@ -79,7 +80,12 @@ public class SettingsActivity extends BaseActivity {
 
         ActionBar actionBar = getActionBar();
         if (actionBar != null) {
-            if (mFragment instanceof android.preference.PreferenceFragment) {
+            if (mFragment instanceof TitleProvider) {
+                CharSequence title = ((TitleProvider) mFragment).getTitle();
+                if (title != null) {
+                    actionBar.setTitle(title);
+                }
+            } else if (mFragment instanceof android.preference.PreferenceFragment) {
                 android.preference.PreferenceScreen preferenceScreen =
                         ((android.preference.PreferenceFragment) mFragment).getPreferenceScreen();
                 if (preferenceScreen != null) {
@@ -115,14 +121,23 @@ public class SettingsActivity extends BaseActivity {
             if (fragmentClass != null) {
                 Intent intent = new Intent(this, SubSettingsActivity.class);
                 intent.putExtra(EXTRA_FRAGMENT_CLASS, fragmentClass);
+
                 if (preference instanceof SystemSettingMasterSwitchPreference) {
-                    intent.putExtra(EXTRA_SWITCH_SYSTEM_SETTINGS_KEY, preference.getKey());
-                    intent.putExtra(EXTRA_SWITCH_SYSTEM_SETTINGS_DEFAULT_VALUE,
-                            ((SystemSettingMasterSwitchPreference) preference).getDefaultValue());
+                    if (fragmentClass.equals(ActionListViewSettings.class.getName())) {
+                        ((SystemSettingMasterSwitchPreference) preference)
+                                .setCheckedPersisting(true);
+                    } else {
+                        intent.putExtra(EXTRA_SWITCH_SYSTEM_SETTINGS_KEY, preference.getKey());
+                        intent.putExtra(EXTRA_SWITCH_SYSTEM_SETTINGS_DEFAULT_VALUE,
+                                ((SystemSettingMasterSwitchPreference) preference)
+                                        .getDefaultValue());
+                    }
                 }
+
                 if (preference.peekExtras() != null) {
                     intent.putExtra(EXTRA_FRAGMENT_ARGUMENTS, preference.getExtras());
                 }
+
                 startActivity(intent);
                 return true;
             }
