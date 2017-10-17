@@ -7,4 +7,7 @@
     <dimen name="ga_gesture_thumbnail_size">64dip</dimen>
     <dimen name="shortcut_picker_left_padding">70dip</dimen>
     
+    <!-- Slim Recents -->
+    <dimen name="alert_dialog_padding_material">20dp</dimen>
+    
 </resources>

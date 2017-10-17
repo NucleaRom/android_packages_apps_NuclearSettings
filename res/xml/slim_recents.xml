@@ -51,21 +51,9 @@
         android:max="105" />
 
     <com.nr.settings.preferences.SystemSettingSwitchPreference
-        android:key="show_running_tasks"
-        android:title="@string/show_running_tasks_title"
-        android:defaultValue="false" />
-
-    <com.nr.settings.preferences.SystemSettingSwitchPreference
-        android:key="recent_panel_show_topmost"
-        android:title="@string/recent_panel_show_topmost_title"
-        android:summary="@string/recent_panel_show_topmost_summary"
-        android:defaultValue="false" />
-
-    <com.nr.settings.preferences.SystemSettingSwitchPreference
         android:key="slim_recents_nr_empty_drawable"
         android:title="@string/slim_recents_nr_empty_drawable_title"
         android:summary="@string/slim_recents_nr_empty_drawable_summary"
-        android:defaultValue="true" />
 
     <SwitchPreference
         android:key="recent_panel_lefty_mode"
@@ -82,13 +70,6 @@
         settings:interval="1"
         settings:unitsRight="dp" />
 
-    <!-- TODO
-    <Preference
-        android:key="slim_icon_pack"
-        android:title="@string/slim_icon_pack_title"
-        android:summary="@string/slim_icon_pack_summary" />
-    -->
-
     <com.nr.settings.preferences.SystemSettingIntListPreference
         android:key="recent_panel_expanded_mode"
         android:entries="@array/recent_panel_expanded_mode_entries"
@@ -96,6 +77,17 @@
         android:title="@string/recent_panel_expanded_mode_title"
         android:summary="@string/recent_panel_expanded_mode_summary"
         android:defaultValue="0" />
+
+    <Preference
+        android:key="slim_icon_pack"
+        android:title="@string/slim_icon_pack_title"
+        android:summary="@string/slim_icon_pack_summary" />
+
+    <PreferenceScreen
+        android:key="blacklist_fragment"
+        android:fragment="com.nr.settings.fragments.SlimRecentsBlacklist"
+        android:title="@string/slim_blacklist_apps_cat_title"
+        android:summary="@string/slim_blacklist_apps_summary" />
 
     <com.nr.settings.preferences.SystemSettingMasterSwitchPreference
         android:key="use_recent_app_sidebar"
