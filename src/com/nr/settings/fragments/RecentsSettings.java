@@ -16,68 +16,85 @@
 
 package com.nr.settings.fragments;
 
-import com.android.internal.logging.nano.MetricsProto;
-import android.app.Activity;
-import android.content.Context;
-import android.content.ContentResolver;
-import android.content.res.Resources;
-import android.os.Bundle;
-import android.os.SystemProperties;
-import android.os.UserHandle;
-import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.support.v14.preference.SwitchPreference;
-import android.provider.Settings;
-import com.android.settings.R;
+import android.support.v7.preference.PreferenceCategory;
+import android.os.Bundle;
 
 import java.util.Arrays;
 import java.util.HashSet;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class RecentsSettings extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
+import com.nr.settings.BaseSettingsFragment;
+import com.nr.settings.R;
+import com.nr.settings.preferences.MasterSwitchPreference;
 
-    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
-    private ListPreference mRecentsClearAllLocation;
-    private SwitchPreference mRecentsClearAll;
+public class Recents extends BaseSettingsFragment {
+
+    private static final String PREF_STOCK_RECENTS_CATEGORY = "stock_recents_category";
+    private static final String PREF_ALTERNATIVE_RECENTS_CATEGORY = "alternative_recents_category";
+
+    private PreferenceCategory mStockRecentsCategory;
+    private PreferenceCategory mAlternativeRecentsCategory;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-
-        addPreferencesFromResource(R.xml.nr_settings_recents);
-
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        // clear all recents
-        mRecentsClearAllLocation = (ListPreference) findPreference(RECENTS_CLEAR_ALL_LOCATION);
-        int location = Settings.System.getIntForUser(resolver,
-                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
-        mRecentsClearAllLocation.setValue(String.valueOf(location));
-        mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
-        mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
-
+    protected int getPreferenceResource() {
+        return R.xml.nr_settings_recents;
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mRecentsClearAllLocation) {
-            int location = Integer.valueOf((String) objValue);
-            int index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
-            Settings.System.putIntForUser(getActivity().getContentResolver(),
-                    Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
-            mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
-        return true;
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        mStockRecentsCategory = (PreferenceCategory) findPreference(PREF_STOCK_RECENTS_CATEGORY);
+        mAlternativeRecentsCategory =
+                (PreferenceCategory) findPreference(PREF_ALTERNATIVE_RECENTS_CATEGORY);
+
+        // Alternative recents en-/disabling
+        Preference.OnPreferenceChangeListener alternativeRecentsChangeListener =
+                new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                updateDependencies((Boolean) newValue ? preference : null);
+                return true;
+            }
+        };
+        for (int i = 0; i < mAlternativeRecentsCategory.getPreferenceCount(); i++) {
+            Preference preference = mAlternativeRecentsCategory.getPreference(i);
+            if (preference instanceof MasterSwitchPreference) {
+                preference.setOnPreferenceChangeListener(alternativeRecentsChangeListener);
+            }
         }
-    return false;
-
     }
 
     @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NR_SETTINGS;
+    public void onResume() {
+        super.onResume();
+
+        for (int i = 0; i < mAlternativeRecentsCategory.getPreferenceCount(); i++) {
+            Preference preference = mAlternativeRecentsCategory.getPreference(i);
+            if (preference instanceof MasterSwitchPreference) {
+                ((MasterSwitchPreference) preference).reloadValue();
+            }
+        }
+        updateDependencies(null);
+    }
+
+    private void updateDependencies(Preference enabledAlternativeRecentsPreference) {
+        boolean alternativeRecentsEnabled = false;
+        for (int i = 0; i < mAlternativeRecentsCategory.getPreferenceCount(); i++) {
+            Preference preference = mAlternativeRecentsCategory.getPreference(i);
+            if (enabledAlternativeRecentsPreference != null
+                    && enabledAlternativeRecentsPreference != preference
+                    && preference instanceof MasterSwitchPreference
+                    && ((MasterSwitchPreference) preference).isChecked()) {
+                // Only one alternative recents at the time!
+                ((MasterSwitchPreference) preference).setCheckedPersisting(false);
+            } else if (preference instanceof MasterSwitchPreference
+                    && ((MasterSwitchPreference) preference).isChecked()) {
+                alternativeRecentsEnabled = true;
+            }
+        }
+        mStockRecentsCategory.setEnabled(!alternativeRecentsEnabled);
     }
 }
