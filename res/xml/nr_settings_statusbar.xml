@@ -24,7 +24,7 @@
         android:key="battery_category"
         android:title="@string/battery_category">
 
-        <com.nr.settings.preference.SecureSettingListPreference
+        <com.nr.settings.preferences.SecureSettingListPreference
             android:key="status_bar_battery_style"
             android:title="@string/battery_style_title"
             android:dialogTitle="@string/battery_style_title"

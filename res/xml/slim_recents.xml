@@ -53,7 +53,7 @@
     <com.nr.settings.preferences.SystemSettingSwitchPreference
         android:key="slim_recents_nr_empty_drawable"
         android:title="@string/slim_recents_nr_empty_drawable_title"
-        android:summary="@string/slim_recents_nr_empty_drawable_summary"
+        android:summary="@string/slim_recents_nr_empty_drawable_summary" />
 
     <SwitchPreference
         android:key="recent_panel_lefty_mode"
@@ -94,11 +94,11 @@
         android:title="@string/recent_app_sidebar_title"
         android:summary="@string/recent_app_sidebar_summary"
         android:defaultValue="true"
-        android:fragment="com.nr.extras.dslv.ActionListViewSettings">
+        android:fragment="com.nr.settings.dslv.ActionListViewSettings">
         <extra android:name="actionMode" android:value="7" />
         <extra android:name="maxAllowedActions" android:value="-1" />
         <extra android:name="useAppPickerOnly" android:value="true" />
-        <extra android:name="fragment" android:value="com.nr.extras.fragments.SlimRecentAppSidebar" />
+        <extra android:name="fragment" android:value="com.nr.settings.fragments.SlimRecentAppSidebar" />
     </com.nr.settings.preferences.SystemSettingMasterSwitchPreference>
 
     <PreferenceCategory

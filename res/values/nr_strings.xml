@@ -37,8 +37,13 @@
     <string name="nr_dialog_toast">READ THE WHOLE THING!</string>
     
     <!-- General -->
+    <string name="app_name">NR Settings</string>
     <string name="on">On</string>
     <string name="off">Off</string>
+    <string name="default_string">Default</string>
+    <string name="nr_downloads_title">Downloads</string>
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
 
     <!-- Marginov Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -71,6 +76,12 @@
     <!-- Tab System ui -->
 
     <string name="recents_title">Recents apps</string>
+    
+    <!-- Seekbarpreference -->
+    <string name="seekbar_no_default_value">No default value set</string>
+    <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
+    <string name="seekbar_default_value_already_set">Default value is already set</string>
+    <string name="seekbar_default_string">@string/default_string</string>
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all button</string>
@@ -161,6 +172,7 @@
     <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
     <string name="recent_panel_expanded_mode_always">Always</string>
     <string name="recent_panel_expanded_mode_never">Never</string>
+    <string name="recent_panel_expanded_mode_disabled">Disabled</string>
     <string name="recent_panel_bg_color_title">Panel background color</string>
     <string name="recent_card_bg_color_title">Card background color</string>
     <string name="slim_recents_mem_display_long_click_clear_title">Memory bar longpress</string>

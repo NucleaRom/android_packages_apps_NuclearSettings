@@ -3,6 +3,7 @@
 /*
 ** Copyright 2014, The Android Open Source Project
 ** Copyright 2017, AICP
+** Copyright 2018, NR
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -24,7 +25,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-    <com.aicp.extras.widget.SwitchBar
+    <com.nr.settings.widget.SwitchBar
         android:id="@+id/switch_bar"
         android:layout_height="?android:attr/actionBarSize"
         android:layout_width="match_parent"

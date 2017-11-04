@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2014 Slimroms
  * Copyright (C) 2015-2017 Android Ice Cold Project
+ * Copyright (C) 2018 NucleaRom
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +39,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.design.widget.Snackbar;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -53,6 +53,7 @@ import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ListView;
 
 import com.android.internal.util.nr.ActionConfig;
@@ -196,9 +197,9 @@ public class ActionListViewSettings extends ListFragment implements
         FilteredDeviceFeaturesArray finalActionDialogArray = new FilteredDeviceFeaturesArray();
         finalActionDialogArray = DeviceUtils.filterUnsupportedDeviceFeatures(mActivity,
             res.getStringArray(res.getIdentifier(
-                    mActionValuesKey, "array", "com.nr.settings")),
+                    mActionValuesKey, "array", "com.android.settings")),
             res.getStringArray(res.getIdentifier(
-                    mActionEntriesKey, "array", "com.nr.settings")));
+                    mActionEntriesKey, "array", "com.android.settings")));
         mActionDialogValues = finalActionDialogArray.values;
         mActionDialogEntries = finalActionDialogArray.entries;
 
@@ -370,8 +371,8 @@ public class ActionListViewSettings extends ListFragment implements
             } else if (requestCode == REQUEST_PICK_CUSTOM_ICON && mPendingIndex != -1) {
                 if (mImageTmp.length() == 0 || !mImageTmp.exists()) {
                     mPendingIndex = -1;
-                    Snackbar.make(getView(), getString(R.string.shortcut_image_not_valid),
-                            Snackbar.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), getString(R.string.shortcut_image_not_valid), 
+                            Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
@@ -436,8 +437,8 @@ public class ActionListViewSettings extends ListFragment implements
         for (int i = 0; i < mActionConfigs.size(); i++) {
             actionConfig = mActionConfigsAdapter.getItem(i);
             if (actionConfig.getClickAction().equals(action)) {
-                Snackbar.make(getView(), getString(R.string.shortcut_duplicate_entry),
-                        Snackbar.LENGTH_LONG).show();
+                Toast.makeText(getContext(), getString(R.string.shortcut_duplicate_entry), 
+                     Toast.LENGTH_SHORT).show();
                 return true;
             }
         }
@@ -471,8 +472,8 @@ public class ActionListViewSettings extends ListFragment implements
         switch (item.getItemId()) {
             case MENU_ADD:
                 if (mActionConfigs.size() == mMaxAllowedActions) {
-                    Snackbar.make(getView(), getString(R.string.shortcut_action_max),
-                            Snackbar.LENGTH_LONG).show();
+                Toast.makeText(getContext(), getString(R.string.shortcut_action_max), 
+                     Toast.LENGTH_SHORT).show();
                     break;
                 }
                 if (mUseFullAppsOnly) {
@@ -531,27 +532,6 @@ public class ActionListViewSettings extends ListFragment implements
 
     private ArrayList<ActionConfig> getConfig() {
         switch (mActionMode) {
-/* Disabled for now till all features are back. Enable it step per step!!!!!!
-            case LOCKSCREEN_SHORTCUT:
-                return ActionHelper.getLockscreenShortcutConfig(mActivity);
-            case NAV_BAR:
-                return ActionHelper.getNavBarConfigWithDescription(
-                    mActivity, mActionValuesKey, mActionEntriesKey);
-            case NAV_RING:
-                return ActionHelper.getNavRingConfigWithDescription(
-                    mActivity, mActionValuesKey, mActionEntriesKey);
-            case PIE:
-                return ActionHelper.getPieConfigWithDescription(
-                    mActivity, mActionValuesKey, mActionEntriesKey);
-            case PIE_SECOND:
-                return ActionHelper.getPieSecondLayerConfigWithDescription(
-                    mActivity, mActionValuesKey, mActionEntriesKey);
-            case POWER_MENU_SHORTCUT:
-                return PolicyHelper.getPowerMenuConfigWithDescription(
-                    mActivity, mActionValuesKey, mActionEntriesKey);
-            case SHAKE_EVENTS_DISABLED:
-                return ActionHelper.getDisabledShakeApps(mActivity);
-*/
             case RECENT_APP_SIDEBAR:
                 return ActionHelper.getRecentAppSidebarConfigWithDescription(
                         mActivity, mActionValuesKey, mActionEntriesKey);
@@ -561,29 +541,6 @@ public class ActionListViewSettings extends ListFragment implements
 
     private void setConfig(ArrayList<ActionConfig> actionConfigs, boolean reset) {
         switch (mActionMode) {
-/* Disabled for now till all features are back. Enable it step per step!!!!!!
-            case LOCKSCREEN_SHORTCUT:
-                ActionHelper.setLockscreenShortcutConfig(mActivity, actionConfigs, reset);
-                break;
-            case NAV_BAR:
-                ActionHelper.setNavBarConfig(mActivity, actionConfigs, reset);
-                break;
-            case NAV_RING:
-                ActionHelper.setNavRingConfig(mActivity, actionConfigs, reset);
-                break;
-            case PIE:
-                ActionHelper.setPieConfig(mActivity, actionConfigs, reset);
-                break;
-            case PIE_SECOND:
-                ActionHelper.setPieSecondLayerConfig(mActivity, actionConfigs, reset);
-                break;
-            case POWER_MENU_SHORTCUT:
-                PolicyHelper.setPowerMenuConfig(mActivity, actionConfigs, reset);
-                break;
-            case SHAKE_EVENTS_DISABLED:
-                ActionHelper.setDisabledShakeApps(mActivity, actionConfigs, reset);
-                break;
-*/
             case RECENT_APP_SIDEBAR:
                 ActionHelper.setRecentAppSidebarConfig(mActivity, actionConfigs, reset);
                 break;
@@ -609,6 +566,7 @@ public class ActionListViewSettings extends ListFragment implements
             };
             TypedArray ta = context.getTheme().obtainStyledAttributes(attrs);
             mIconColor = ta.getColor(0, 0xff808080);
+            ta.recycle();
         }
 
         public View getView(final int position, View convertView, ViewGroup parent) {
@@ -876,8 +834,8 @@ public class ActionListViewSettings extends ListFragment implements
                                         getOwner().mPendingIndex, false);
                                     getOwner().mPendingIndex = -1;
                                     break;
-                                case 1: // System defaults
-                                /*
+                                case 1://  System defaults
+                                
                                     ListView list = new ListView(getActivity());
                                     list.setAdapter(new IconAdapter(mIconColor));
                                     final Dialog holoDialog = new Dialog(getActivity());
@@ -898,8 +856,7 @@ public class ActionListViewSettings extends ListFragment implements
                                     });
                                     holoDialog.show();
                                     break;
-                                case 2: // Custom user icon
-                                    */
+                                case 2:  //Custom user icon
                                     Intent intent = new Intent(Intent.ACTION_GET_CONTENT, null);
                                     intent.setType("image/*");
                                     intent.putExtra("crop", "true");
@@ -981,7 +938,7 @@ public class ActionListViewSettings extends ListFragment implements
                 TextView tt = (TextView) iView.findViewById(android.R.id.text1);
                 tt.setText(labels[position]);
                 Drawable ic = ((Drawable) getItem(position)).mutate();
-                ic.setTint(color);
+                //ic.setTint(color);
                 tt.setCompoundDrawablePadding(15);
                 tt.setCompoundDrawablesWithIntrinsicBounds(ic, null, null, null);
                 return iView;

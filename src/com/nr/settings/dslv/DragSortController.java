@@ -1,6 +1,7 @@
 /*
- * Copyright 2012 Carl Bauer
- * Copyright (C) 2014 SlimRoms Project
+ * Copyright (C) 2014 Slimroms
+ * Copyright (C) 2015-2017 Android Ice Cold Project
+ * Copyright (C) 2018 NucleaRom
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

@@ -29,7 +29,7 @@ import com.nr.settings.BaseSettingsFragment;
 import com.nr.settings.R;
 import com.nr.settings.preferences.MasterSwitchPreference;
 
-public class Recents extends BaseSettingsFragment {
+public class RecentsSettings extends BaseSettingsFragment {
 
     private static final String PREF_STOCK_RECENTS_CATEGORY = "stock_recents_category";
     private static final String PREF_ALTERNATIVE_RECENTS_CATEGORY = "alternative_recents_category";

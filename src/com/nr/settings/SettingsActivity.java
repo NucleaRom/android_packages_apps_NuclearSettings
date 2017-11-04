@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 NR
+ * Copyright (C) 2018 NucleaRom
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,6 +28,11 @@ import com.nr.settings.preferences.MasterSwitchPreference;
 import com.nr.settings.preferences.SystemSettingMasterSwitchPreference;
 import com.nr.settings.preferences.SystemSettingSwitchBarController;
 import com.nr.settings.widget.SwitchBar;
+import com.nr.settings.R;
+import com.nr.settings.BaseActivity;
+import com.nr.settings.BaseSettingsFragment;
+import com.nr.settings.TitleProvider;
+
 
 public class SettingsActivity extends BaseActivity {
 
@@ -158,6 +163,6 @@ public class SettingsActivity extends BaseActivity {
     }
 
     protected Fragment getDefaultFragment() {
-        return new Dashboard();
+        return new SystemUISettings();
     }
 }

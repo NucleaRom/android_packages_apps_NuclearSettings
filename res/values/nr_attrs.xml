@@ -57,11 +57,17 @@
     	<attr name="netUnitsRight" format="string" />
         <attr name="unitsLeft" format="string" />
         <attr name="unitsRight" format="string" />
+        <attr name="interval" format="integer" />
+        <attr name="thumb_default_value_color" format="color" />
+        <attr name="value_popup_view_fg" format="color" />
+        <attr name="value_popup_view_bg" format="color" />
     </declare-styleable>
 
     <!-- Value to pass to callback when restore button is pressed -->
     <declare-styleable name="ColorPreference">
         <attr name="defaultColorValue" format="integer" />
     </declare-styleable>
+
+    <attr name="color_settings_icon" format="color" />
 
 </resources>

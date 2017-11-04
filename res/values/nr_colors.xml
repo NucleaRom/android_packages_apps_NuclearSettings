@@ -21,4 +21,7 @@
     <!-- Gesture Anywhere -->
     <color name="ga_gesture_color">@android:color/holo_blue_light</color>
 
+    <!-- Color of the launcher shortcut icons -->
+    <color name="launcher_shortcut">#ffab00</color>
+
  </resources> 
