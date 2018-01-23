@@ -52,6 +52,11 @@
         <attr name="min" format="integer" />
         <attr name="units" format="string|reference" />
         <attr name="defaultText" format="string|reference" />
+		<attr name="netMin" format="integer" />
+    	<attr name="netUnitsLeft" format="string" />
+    	<attr name="netUnitsRight" format="string" />
+        <attr name="unitsLeft" format="string" />
+        <attr name="unitsRight" format="string" />
     </declare-styleable>
 
     <!-- Value to pass to callback when restore button is pressed -->
