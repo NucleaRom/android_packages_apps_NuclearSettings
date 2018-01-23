@@ -45,11 +45,21 @@ import com.android.settings.SettingsPreferenceFragment;
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String KEY_SMART_PIXELS = "smart_pixels";
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.nr_settings_misc);
+
+        boolean enableSmartPixels = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference SmartPixels = findPreference(KEY_SMART_PIXELS);
+
+        if (!enableSmartPixels){
+            SmartPixels.getParent().removePreference(SmartPixels);
+        }
 
     }
 

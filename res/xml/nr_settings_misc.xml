@@ -53,6 +53,11 @@
               android:summary="@string/sensor_block_summary"
               android:defaultValue="false" />
 
+        <PreferenceScreen
+              android:key="smart_pixels"
+              android:title="@string/smart_pixels_title"
+              android:fragment="com.nr.settings.fragments.SmartPixels" />
+
         <com.nr.settings.preferences.SystemSettingSwitchPreference
              android:key="status_bar_ime_switcher"
              android:title="@string/ime_switcher_notify"
