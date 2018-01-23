@@ -26,6 +26,11 @@
             android:title="@string/advanced_reboot_title"
             android:summary="@string/advanced_reboot_summary" />
 
+    <Preference
+        android:key="smart_pixels"
+        android:title="@string/smart_pixels_title"
+        android:fragment="com.nr.settings.fragments.SmartPixels" />
+
     <!-- Screenshot tone -->
     <com.nr.settings.preferences.SystemSettingSwitchPreference
         android:key="screenshot_sound"
