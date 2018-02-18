@@ -34,6 +34,7 @@
 
     <!-- Categorys -->
     <string name="recents_category">Recents</string>
+    <string name="tweaks_category">Tweaks</string>
 
     <!-- (!)Dialog -->
     <string name="nr_dialog_title">Help Us, Help You!!</string>
@@ -60,5 +61,10 @@
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
 
 </resources>
