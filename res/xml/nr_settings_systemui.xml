@@ -24,7 +24,7 @@
     <Preference
         android:key="recents_category"
         android:title="@string/recents_title"
-        android:fragment="com.pnw.settings.fragments.RecentsSettings"
+        android:fragment="com.nr.settings.fragments.RecentsSettings"
         android:icon="@drawable/ic_settings_recents"/>
 
 </PreferenceScreen>
