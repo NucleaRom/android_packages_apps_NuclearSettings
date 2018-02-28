@@ -35,6 +35,7 @@
     <!-- Categorys -->
     <string name="recents_category">Recents</string>
     <string name="tweaks_category">Tweaks</string>
+    <string name="battery_category">Battery styles</string>
 
     <!-- (!)Dialog -->
     <string name="nr_dialog_title">Help Us, Help You!!</string>
@@ -128,5 +129,15 @@
     <string name="select_custom_app_title">Select custom app</string>
     <string name="select_custom_activity_title">Select custom activity</string>
     <string name="profile_applist_title">Applications</string>
+
+    <!-- Battery Styles -->
+    <string name="battery_style_title">Battery icon style</string>
+    <string name="battery_style_summary">Change the look of the icon in the statusbar</string>
+    <string name="battery_style_port">Portrait</string>
+    <string name="battery_style_land">Landscape</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_dotted_circle">Dotted circle</string>
+    <string name="battery_style_text">Text</string>
+    <string name="battery_style_hidden">Hidden</string>
 
 </resources>
