@@ -20,4 +20,16 @@
     android:layout="@layout/nr_preference_tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+     <!-- Security -->
+    <PreferenceCategory
+        android:key="security_category"
+        android:title="@string/security_category">
+
+     <com.nr.settings.preferences.SystemSettingSwitchPreference
+        android:key="fp_unlock_keystore"
+        android:title="@string/fp_unlock_keystore_title"
+        android:summary="@string/fp_unlock_keystore_summary"
+        android:defaultValue="false" />
+     </PreferenceCategory>
+
 </PreferenceScreen>
