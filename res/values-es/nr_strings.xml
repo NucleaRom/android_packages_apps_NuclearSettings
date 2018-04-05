@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018      NucleaRom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Tabs -->
+    <string name="systemui_title">System UI</string>
+    <string name="statusbar_title">Status Bar</string>
+    <string name="lockscreen_title">Lock Screen</string>
+    <string name="button_title">Buttons</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="about_title">NuclearZone</string>
+
+    <!-- Categorys -->
+    <string name="recents_category">Recents</string>
+    <string name="tweaks_category">Tweaks</string>
+    <string name="battery_category">Battery styles</string>
+    <string name="clock_category">Clock options</string>
+    <string name="security_category">Security</string>
+    <string name="stock_recents_category">Stock recents</string>
+    <string name="alternative_recents_category">Alternative recents</string>
+    <string name="qs_category">QS Options</string>
+
+    <!-- (!)Dialog -->
+    <string name="nr_dialog_title">Help Us, Help You!!</string>
+    <string name="nr_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please contact a NucleaRom developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
+    <string name="nr_dialog_toast">READ THE WHOLE THING!</string>
+    
+    <!-- General -->
+    <string name="app_name">NR Settings</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="default_string">Default</string>
+    <string name="nr_downloads_title">Downloads</string>
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">For all changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+
+    <!-- Marginov Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>    
+
+    <!-- Tab Status bar -->
+
+    <!-- Battery Styles -->
+    <string name="battery_style_title">Battery icon style</string>
+    <string name="battery_style_summary">Change the look of the icon in the statusbar</string>
+    <string name="battery_style_port">Portrait</string>
+    <string name="battery_style_land">Landscape</string>
+    <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_dotted_circle">Dotted circle</string>
+    <string name="battery_style_text">Text</string>
+    <string name="battery_style_hidden">Hidden</string>
+
+    <!-- Tab Lock screen -->
+
+    <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">Fingerprint unlock</string>
+    <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without PIN/Password/Pattern\nNote: at your own risk!</string>
+
+    <!-- Tab System ui -->
+
+    <string name="recents_title">Recents apps</string>
+    
+    <!-- Seekbarpreference -->
+    <string name="seekbar_no_default_value">No default value set</string>
+    <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
+    <string name="seekbar_default_value_already_set">Default value is already set</string>
+    <string name="seekbar_default_string">@string/default_string</string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all button</string>
+    <string name="show_clear_all_recents_button_summary_on">Show clear all FAB</string>
+    <string name="show_clear_all_recents_button_summary_off">Show AOSP clear all</string>
+    <string name="recents_clear_all_location_title">Clear all button location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+
+    <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_title">Gesture Anywhere</string>
+    <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
+    <string name="gesture_anywhere_enabled_summary">Enable the Gesture Anywhere feature</string>
+    <string name="gesture_anywhere_position_title">Loction</string>
+    <string name="gesture_anywhere_position_left">Left edge</string>
+    <string name="gesture_anywhere_position_right">Right edge</string>
+    <string name="gesture_anywhere_gestures_title">Gestures</string>
+    <string name="gesture_anywhere_gestures_summary">Add, remove, and edit gestures</string>
+    <!-- Label, button used to add a gesture -->
+    <string name="ga_button_add">Add gesture</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="ga_button_reload">Reload</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="ga_button_discard">Discard</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">Done</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="ga_prompt_gesture_name">Name</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="ga_error_missing_name">You must enter a name</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="ga_save_success">Gesture saved in %s</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_rename_action">OK</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="ga_cancel_action">Cancel</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="ga_gestures_loading">Loading gestures...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="ga_gestures_empty">No gestures</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="ga_gestures_activity">Gestures</string>
+    <!-- Noun, menu item used to edit a gesture -->
+    <string name="ga_gestures_edit">Edit</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="ga_gestures_delete">Delete</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="ga_gestures_delete_success">Gesture deleted</string>
+    <!-- Title of dialog box -->
+    <string name="ga_gestures_rename_title">Rename gesture</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="ga_gestures_rename_label">Gesture name</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
+    <string name="trigger_category">Trigger region</string>
+    <string name="trigger_width_title">Trigger width</string>
+    <string name="trigger_width_summary">Adjust the width of the trigger area</string>
+    <string name="trigger_top_title">Trigger position</string>
+    <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
+    <string name="trigger_bottom_title">Trigger height</string>
+    <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+    <string name="profile_applist_title">Applications</string>
+
+    <!-- Tab Miscellaneous -->
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
+    <!-- Three finger screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
+    <!-- Slim recents -->
+    <string name="slim_recents_title">Slim recents</string>
+    <string name="recents_max_apps_title">Max allowed apps</string>
+    <string name="recent_panel_scale_title">Size</string>
+    <string name="recent_panel_expanded_mode_title">Expanded mode</string>
+    <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">Always</string>
+    <string name="recent_panel_expanded_mode_never">Never</string>
+    <string name="recent_panel_expanded_mode_disabled">Disabled</string>
+    <string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="slim_recents_mem_display_long_click_clear_title">Memory bar longpress</string>
+    <string name="slim_recents_mem_display_long_click_clear_summary">Clear recents by long-pressing the memory bar</string>
+    <string name="slim_icon_pack_title">Icon Pack</string>
+    <string name="slim_icon_pack_summary">Apply a custom icon pack for apps in the panel</string>
+    <string name="no_iconpacks_summary">No icon packs installed</string>
+    <string name="dialog_pick_iconpack_title">Pick icon pack</string>
+    <string name="default_iconpack_title">Default icons</string>
+    <string name="slim_recents_corner_radius_title">Card corner radius</string>
+    <string name="slim_recents_nr_empty_drawable_title">NucleaRom empty recents</string>
+    <string name="slim_recents_nr_empty_drawable_summary">Image to show when no recent apps</string>
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
+    <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="slim_blacklist_apps_cat_title">Blacklist</string>
+    <string name="slim_blacklist_apps_title">Apps blacklist</string>
+    <string name="slim_blacklist_apps_summary">Apps to not show in the panel</string>
+    <string name="slim_blacklist_add_apps_title">Add app</string>
+    <string name="slim_blacklist_add_apps_summary">Tap here to add, tap on added app to remove it</string>
+
+    <!-- Slim Recent App Sidebar  -->
+    <string name="recent_app_sidebar_title">Recents app sidebar</string>
+    <string name="recent_app_sidebar_summary">Show app shortcuts on the other edge</string>
+    <string name="use_recent_app_sidebar_title">Enable app sidebar</string>
+    <string name="use_recent_app_sidebar_summary">Show app shortcuts on the other edge</string>
+    <string name="recent_app_sidebar_content_title">Sidebar content</string>
+    <string name="recent_app_sidebar_content_summary">Configure the content of the app sidebar</string>
+    <string name="recent_app_sidebar_style_title">Sidebar style</string>
+    <string name="recent_app_sidebar_style_summary">Change the look of the sidebar</string>
+    <string name="recent_app_sidebar_hide_labels_title">Hide icon labels</string>
+    <string name="recent_app_sidebar_label_color_title">Label color</string>
+    <string name="recent_app_sidebar_bg_color_title">Background color</string>
+    <string name="recent_app_sidebar_scale_title">Size</string>
+    <string name="recent_app_sidebar_open_simultaneously_title">Open simultaneously with recents</string>
+    <string name="recent_app_sidebar_open_simultaneously_summary">Reduce recents opening lag by disabling this</string>
+
+    <!-- Slim recents membar -->
+    <string name="slim_recents_mem_display_category_title">Memory bar</string>
+    <string name="slim_recents_mem_display_title">Show memory bar</string>
+    <string name="slim_recents_mem_display_summaryOn">Memory bar enabled</string>
+    <string name="slim_recents_mem_display_summaryOff">Memory bar disabled</string>
+    <string name="slim_recents_mem_display_color">Memory bar color</string>
+    <string name="slim_recents_mem_display_text_color">Memory bar text color</string>
+
+    <!-- Statusbar Clock options -->
+    <string name="status_bar_clock_title">Clock options</string>
+    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
+    <string name="clock_title_enable">Alignment</string>
+    <string name="right_clock">Right clock</string>
+    <string name="center_clock">Center clock</string>
+    <string name="left_clock">Left clock</string>
+    <string name="status_bar_clock_seconds_title">Clock seconds</string>
+    <string name="status_bar_clock_seconds_summary">Display seconds next to clock in status bar</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="menu_save">Save</string>
+
+    <!-- Face unlock toggle -->
+    <string name="face_auto_unlock_title">Face auto unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
+
+     <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+
+    <!-- AOKP custom system animations -->
+    <string name="animation_title">Animations</string>
+    <string name="system_animation_title">System animations</string>
+    <string name="activity_open_title">Activity open animation</string>
+    <string name="activity_close_title">Activity close animation</string>
+    <string name="task_open_title">Task open animation</string>
+    <string name="task_close_title">Task close animation</string>
+    <string name="task_move_to_front_title">Move to front animation</string>
+    <string name="task_move_to_back_title">Move to back animation</string>
+    <string name="wallpaper_open_title">Wallpaper open animation</string>
+    <string name="wallpaper_close_title">Wallpaper close animation</string>
+    <string name="wallpaper_intra_open_title">Wallpaper intra open animation</string>
+    <string name="wallpaper_intra_close_title">Wallpaper intra close animation</string>
+    <string name="animation_duration_title">Animation duration</string>
+    <string name="title_animation_no_override">Prevent app overrides</string>
+    <string name="summary_animation_no_override">Prevent apps from overriding transitions</string>
+    <string name="animation_duration_default">Default</string>
+
+    <!-- Toast icon switch -->
+    <string name="toast_icon_title">Toast icon</string>
+    <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Sensor block per-package</string>
+    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery.</string>
+
+    <!-- IME switch -->
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
+
+    <!-- Qs Panel -->
+    <string name="nr_qs_title">Quick Settings Panel</string>
+    <!-- QS rows and columns -->
+    <string name="qs_layout_category_title">QS Layout</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+    <!-- QS Transparency -->
+    <string name="qs_panel_alpha_title">Transparency</string>
+
+    <!-- About NucleaRomReborn -->
+    <string name="about_nr_settings_title">NucleaRom</string>
+    <string name="all_nr">All About NucleaRom</string>
+    <string name="nr_donate_title">Contribute a donation to the NucleaRom</string>
+    <string name="nr_donate_summary">Support to NucleaRom</string>
+    <string name="github_tn">https://github.com/NucleaRom</string>
+    <string name="nr">Links</string>
+    <string name="nr_kernel_title">Kernel Website</string>
+    <string name="nr_kernel_summary">Mas informacion acerca del kernel</string>
+    <string name="nr_forum_title">NucleaRom ForumSite</string>
+    <string name="nr_forum_summary">Check the last downloads</string>
+    <string name="nr_source_title">Github</string>
+    <string name="nr_source_summary">NucleaRom Sources</string>
+    <string name="sourcebase_title">Source Base</string>
+    <string name="title_about">About NucleaRom</string>
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_title_summary">Check the changelog</string>
+    <string name="team_nuclear">NuclearTeam Members</string>
+    <string name="moludo">Moludo</string>
+    <string name="moludo_summary">● Founder \n● Developer \n● Maintainer</string>
+    <string name="lozo">Lozo</string>
+    <string name="lozo_summary">● Developer \n● Maintainer </string>
+    <string name="acuicultor">Acuicultor</string>
+    <string name="acuicultor_summary">● Developer \n● Maintainer</string>
+    <string name="ordenkrieger">OrdenKrieger</string>
+    <string name="ordenkrieger_summary">● Developer \n● Maintainer \n● Designer</string>
+    <string name="devs_title">Nuclear People</string>
+    <string name="nr_sourcebase">LineageOS</string>
+    <string name="nr_sourcebase_sumary">https://github.com/LineageOS</string>
+    <string name="nuclear_web_title">Nuclear Web Site</string>
+    <string name="nuclear_web_summary">Main site of Nuclear Team, Visit us now!</string>
+    <string name="nuclear_status">NucleaRom Status</string>
+
+    <!-- Changelog -->
+    <string name="changelog_nuclear_title">Changelog on last Build</string>
+    <string name="changelog_nuclear_summary">See the last changes on the rom</string>
+    <string name="changelog_nr_error">Unable to load changelog</string>
+
+    <!-- The Drill -->
+    <string name="nuclear_drill_title">The drill</string>
+    <string name="drill_summary">Logcat or GTFO</string>
+
+</resources>
