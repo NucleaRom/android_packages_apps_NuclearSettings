@@ -34,8 +34,10 @@ public class QsPanel extends SettingsPreferenceFragment implements
     private static final String TAG = "QsPanel";
 
 private static final String QS_PANEL_ALPHA = "qs_panel_alpha";
+private static final String PREF_SYSUI_QQS_COUNT = "sysui_qqs_count_key";
 
 private CustomSeekBarPreference mQsPanelAlpha;
+private CustomSeekBarPreference mSysuiQqsCount;
 
     @Override
     public int getMetricsCategory() {
@@ -55,6 +57,12 @@ private CustomSeekBarPreference mQsPanelAlpha;
                 Settings.System.QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
         mQsPanelAlpha.setValue(qsPanelAlpha);
         mQsPanelAlpha.setOnPreferenceChangeListener(this);
+
+        mSysuiQqsCount = (CustomSeekBarPreference) findPreference(PREF_SYSUI_QQS_COUNT);
+        int SysuiQqsCount = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.QQS_COUNT, 6);
+        mSysuiQqsCount.setValue(SysuiQqsCount / 1);
+        mSysuiQqsCount.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -67,7 +75,12 @@ private CustomSeekBarPreference mQsPanelAlpha;
                 Settings.System.QS_PANEL_BG_ALPHA, bgAlpha,
                 UserHandle.USER_CURRENT);
         return true;
-    }
+    } else if (preference == mSysuiQqsCount) {
+            int SysuiQqsCount = (Integer) newValue;
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.QQS_COUNT, SysuiQqsCount * 1);
+            return true;
+        }
         return false;
     }
 }

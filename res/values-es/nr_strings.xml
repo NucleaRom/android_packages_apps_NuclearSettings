@@ -352,4 +352,8 @@
     <string name="enable_mtp_dirtyhack_title">Transferir archivos en vez de cargar</string>
     <string name="enable_mtp_dirtyhack_summary">Usar MTP por defecto en vez de cargar cuando se conecte al PC</string>
 
+    <!-- Ajustes Rapidos -->
+    <string name="qs_columns_title">Columnas</string>
+    <string name="qs_small_tiles_title">Ajustes Rapidos</string>
+
 </resources>
