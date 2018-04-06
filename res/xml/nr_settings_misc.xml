@@ -58,6 +58,12 @@
              android:title="@string/ime_switcher_notify"
              android:summary="@string/ime_switcher_notify_summary"
              android:defaultValue="true" />
+
+        <com.nr.settings.preferences.SystemSettingSwitchPreference
+	        android:key="mtp_dirty_hack"
+            android:title="@string/enable_mtp_dirtyhack_title"
+            android:summary="@string/enable_mtp_dirtyhack_summary"
+            android:defaultValue="true" />
     </PreferenceCategory>
 
     <!-- Screen off animation -->

@@ -350,4 +350,8 @@
     <string name="nuclear_drill_title">The drill</string>
     <string name="drill_summary">Logcat or GTFO</string>
 
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">Transfer Files instead of Charging</string>
+    <string name="enable_mtp_dirtyhack_summary">Default to MTP instead of Charging when connected to a PC</string>
+
 </resources>
