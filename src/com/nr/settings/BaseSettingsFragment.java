@@ -17,6 +17,7 @@
 
 package com.nr.settings;
 
+import android.content.ContentResolver;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
@@ -72,4 +73,9 @@ public abstract class BaseSettingsFragment extends PreferenceFragment {
     protected boolean isMasterDependencyEnabled() {
         return mMasterDependencyEnabled;
     }
+
+    protected ContentResolver getContentResolver() {
+        return getActivity().getContentResolver();
+    }
+    
 }

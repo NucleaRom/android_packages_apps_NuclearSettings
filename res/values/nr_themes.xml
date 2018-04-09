@@ -15,4 +15,7 @@
         <item name="switchBarTheme">@style/ThemeOverlay.SwitchBar.Settings.Dark</item>
     </style>
 
+    <!-- DUI -->
+    <style name="Theme.SmartBar.Dialog" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+
 </resources>
