@@ -68,7 +68,7 @@ public class NavigationBar extends BaseSettingsFragment implements Preference.On
 
     @Override
     protected int getPreferenceResource() {
-        return R.xml.navigation_bar;
+        return R.xml.nr_settings_button;
     }
 
     @Override

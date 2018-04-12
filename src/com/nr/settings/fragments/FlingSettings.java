@@ -28,7 +28,7 @@ import com.android.internal.utils.du.DUActionUtils;
 import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.R;
 import com.nr.settings.IconPickHelper;
-import com.nr.settings.preference.ActionPreference;
+import com.nr.settings.preferences.ActionPreference;
 
 import android.app.ActionBar;
 import android.content.Context;
