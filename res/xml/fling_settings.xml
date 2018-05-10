@@ -120,10 +120,10 @@
             android:title="@string/fling_animate_logo_title"
             android:summary="@string/fling_animate_logo_summary" />
 
-        <Preference
+        <!--Preference
             android:key="fling_custom_logo_pick"
             android:dependency="eos_fling_show_logo"
-            android:title="@string/fling_logo_custom_logo_pick_title" />
+            android:title="@string/fling_logo_custom_logo_pick_title" /-->
 
         <Preference
             android:key="fling_custom_logo_gallery_pick"
