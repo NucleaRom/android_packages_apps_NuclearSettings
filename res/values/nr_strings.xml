@@ -59,4 +59,8 @@
     <string name="face_auto_unlock_title">Face auto unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
 
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Advanced restart</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
+
 </resources>
