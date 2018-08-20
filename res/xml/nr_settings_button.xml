@@ -20,4 +20,10 @@
     android:layout="@layout/nr_preference_tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+    android:key="gesture_settings"
+    android:title="@string/gesture_settings_title"
+    android:summary="@string/gesture_settings_summary"
+    android:fragment="com.nr.settings.fragments.OmniGestureSettings" />
+
 </PreferenceScreen>
