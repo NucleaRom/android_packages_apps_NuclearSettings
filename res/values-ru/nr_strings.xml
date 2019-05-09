@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018      NucleaRom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Tabs -->
+  <string name="systemui_title">Интерфейс</string>
+  <string name="statusbar_title">Статус Бар</string>
+  <string name="lockscreen_title">Экран Блокировки</string>
+  <string name="button_title">Кнопки</string>
+  <string name="misc_title">Другое</string>
+  <string name="device_part_title">Настройки устройства</string>
+  <string name="about_title">NuclearZone</string>
+  <!-- Categorys -->
+  <string name="recents_category">Панель недавних приложений</string>
+  <string name="tweaks_category">Tweaks</string>
+  <string name="battery_category">Стиль батареи</string>
+  <string name="clock_category">Параметры часов</string>
+  <string name="security_category">Защита</string>
+  <string name="stock_recents_category">Стандартная панель недавних приложений</string>
+  <string name="alternative_recents_category">Альтернативные панели недавних приложений</string>
+  <string name="qs_category">QS Options</string>
+  <!-- (!)Dialog -->
+  <string name="nr_dialog_title">Поможете нам, поможете себе!!!</string>
+  <string name="nr_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please contact a NucleaRom developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
+  <string name="nr_dialog_toast">ПРОЧИТАЙТЕ ВСЁ!</string>
+  <!-- General -->
+  <string name="app_name">NR Settings</string>
+  <string name="on">ВКЛЮЧЕНО</string>
+  <string name="off">Отключено</string>
+  <string name="default_string">По умолчанию</string>
+  <string name="nr_downloads_title">Загрузки</string>
+  <string name="systemui_restart_title">Необходима перезагрузка интерфейса</string>
+  <string name="systemui_restart_message">Чтобы все изменения вступили в силу, требуется перезагрузка интерфейса. Перезагрузить интерфейс?</string>
+  <string name="yes">@android:string/да</string>
+  <string name="no">@android:string/нет</string>
+  <string name="reset">Сбросить</string>
+  <!-- Marginov Color Picker -->
+  <string name="dialog_color_picker">Выбор цвета</string>
+  <string name="press_color_to_apply">Нажмите на цвет ниже для применения</string>
+  <string name="arrow_right">→</string>
+  <string name="arrow_down">↓</string>
+  <string name="hex">Hex:</string>
+  <string name="hex_hint">#ff000000</string>
+  <string name="set">Сохранить</string>
+  <string name="color_default">По умолчанию</string>
+  <!-- Tab Status bar -->
+  <!-- Battery Styles -->
+  <string name="battery_style_title">Стиль значка батареи</string>
+  <string name="battery_style_summary">Изменение внешнего вида значка в строке состояния</string>
+  <string name="battery_style_port">Портретная ориентация</string>
+  <string name="battery_style_land">Ландшафтная ориентация</string>
+  <string name="battery_style_circle">Круг</string>
+  <string name="battery_style_dotted_circle">Пунктирный круг</string>
+  <string name="battery_style_text">Текст</string>
+  <string name="battery_style_hidden">Скрыть</string>
+  <!-- Tab Lock screen -->
+  <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">Разблокировка отпечатком</string>
+  <string name="fp_unlock_keystore_summary">Разблокировать устройство после перезагрузки без PIN/Пароля/Граф. ключа.\nПрим.: Используйте на свой страх и риск!</string>
+  <!-- Tab System ui -->
+  <string name="recents_title">Панель недавних приложений</string>
+  <!-- Seekbarpreference -->
+  <string name="seekbar_no_default_value">Значение по умолчанию не установлено</string>
+  <string name="seekbar_default_value_set">Value set to default of <xliff:g id="number">%d</xliff:g></string>
+  <string name="seekbar_default_value_already_set">Default value is already set</string>
+  <string name="seekbar_default_string">@string/default_string</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Кнопка «Очистить всё»</string>
+  <string name="show_clear_all_recents_button_summary_on">Показано</string>
+  <string name="show_clear_all_recents_button_summary_off">Скрыто</string>
+  <string name="recents_clear_all_location_title">Расположение кнопки \"Очистить всё\"</string>
+  <string name="recents_clear_all_location_top_right">Вверху справа</string>
+  <string name="recents_clear_all_location_top_left">Вверху слева</string>
+  <string name="recents_clear_all_location_top_center">Вверху по центру</string>
+  <string name="recents_clear_all_location_bottom_right">Внизу справа</string>
+  <string name="recents_clear_all_location_bottom_left">Внизу слева</string>
+  <string name="recents_clear_all_location_bottom_center">Внизу по центру</string>
+  <!-- Gesture Anywhere -->
+  <string name="gesture_anywhere_title">Жесты везде</string>
+  <string name="gesture_anywhere_enabled_title">Жесты везде</string>
+  <string name="gesture_anywhere_enabled_summary">Включить функцию «Жесты везде»</string>
+  <string name="gesture_anywhere_position_title">Расположение</string>
+  <string name="gesture_anywhere_position_left">По левому краю</string>
+  <string name="gesture_anywhere_position_right">По правому краю</string>
+  <string name="gesture_anywhere_gestures_title">Жесты</string>
+  <string name="gesture_anywhere_gestures_summary">Добавить, удалить и редактировать жесты</string>
+  <!-- Label, button used to add a gesture -->
+  <string name="ga_button_add">Добавить жест</string>
+  <!-- Label, button used to reload all gestures -->
+  <string name="ga_button_reload">Перезагрузить</string>
+  <!-- Label, button used to cancel the operation of adding a gesture -->
+  <string name="ga_button_discard">Отменить</string>
+  <!-- Label, button used to save a gesture newly created -->
+  <string name="ga_button_done">Готово</string>
+  <!-- Label, prompt asking the user to enter the name of the gesture -->
+  <string name="ga_prompt_gesture_name">Название</string>
+  <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+  <string name="ga_error_missing_name">Вы должны ввести название</string>
+  <!-- success message, tells the user where the gesture was saved -->
+  <string name="ga_save_success">Жест сохранён в %s</string>
+  <!-- Buttons in Rename gesture dialog box -->
+  <string name="ga_rename_action">ОК</string>
+  <!-- Buttons in Rename gesture dialog box -->
+  <string name="ga_cancel_action">Отмена</string>
+  <!-- Message displayed when the user opens the gestures settings screen -->
+  <string name="ga_gestures_loading">Загрузка жестов...</string>
+  <!-- Message displayed when the user has no gestures -->
+  <string name="ga_gestures_empty">Нет жестов</string>
+  <!-- Title of the screen used to view/manage gestures -->
+  <string name="ga_gestures_activity">Жесты</string>
+  <!-- Noun, menu item used to edit a gesture -->
+  <string name="ga_gestures_edit">Изменить</string>
+  <!-- Noun, menu item used to remove a gesture -->
+  <string name="ga_gestures_delete">Удалить</string>
+  <!-- Message displayed when a gesture is successfully deleted -->
+  <string name="ga_gestures_delete_success">Жест удалён</string>
+  <!-- Title of dialog box -->
+  <string name="ga_gestures_rename_title">Переименовать жест</string>
+  <!-- Label of gesture name field in Rename gesture dialog box -->
+  <string name="ga_gestures_rename_label">Название жеста</string>
+  <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+  <string name="ga_gestures_error_loading">Не удалось загрузить %s. Убедитесь, что у вас есть доступ к памяти.</string>
+  <string name="trigger_category">Область вызова</string>
+  <string name="trigger_width_title">Ширина области вызова</string>
+  <string name="trigger_width_summary">Установите ширину области вызова</string>
+  <string name="trigger_top_title">Позиция области вызова</string>
+  <string name="trigger_top_summary">Установите вертикальное расположение области вызова</string>
+  <string name="trigger_bottom_title">Высота области вызова</string>
+  <string name="trigger_bottom_summary">Установите высоту области вызова</string>
+  <string name="picker_activities">Действия</string>
+  <string name="select_custom_app_title">Выбрать своё приложение</string>
+  <string name="select_custom_activity_title">Выбрать своё действие</string>
+  <string name="profile_applist_title">Приложения</string>
+  <!-- Tab Miscellaneous -->
+  <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+  <string name="show_cpu_info">Показать информацию процессора</string>
+  <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+  <string name="show_cpu_info_summary">Экранное наслоение, показывающее текущую информацию о процессоре</string>
+  <!-- Three finger screenshot -->
+  <string name="three_finger_gesture">Жест тремя пальцами</string>
+  <string name="three_finger_gesture_summary">Свайп тремя пальцами для создания скриншота</string>
+  <!-- Slim recents -->
+  <string name="slim_recents_title">Меню недавних приложений Slim</string>
+  <string name="recents_max_apps_title">Максимально допустимое количество приложений</string>
+  <string name="recent_panel_scale_title">Размер</string>
+  <string name="recent_panel_expanded_mode_title">Расширенный режим</string>
+  <string name="recent_panel_expanded_mode_summary">Расширенный предпросмотр недавних приложений</string>
+  <string name="recent_panel_expanded_mode_auto">Авто (по умолчанию)</string>
+  <string name="recent_panel_expanded_mode_always">Всегда</string>
+  <string name="recent_panel_expanded_mode_never">Никогда</string>
+  <string name="recent_panel_expanded_mode_disabled">Отключено</string>
+  <string name="recent_panel_bg_color_title">Цвет фона панели</string>
+  <string name="recent_card_bg_color_title">Цвет фона карточки</string>
+  <string name="slim_recents_mem_display_long_click_clear_title">Долгое нажатие на панель памяти</string>
+  <string name="slim_recents_mem_display_long_click_clear_summary">Очищать панель недавних приложений долгим нажатием на панель использования памяти</string>
+  <string name="slim_icon_pack_title">Набор значков</string>
+  <string name="slim_icon_pack_summary">Применить свой набор значков для приложений в панели</string>
+  <string name="no_iconpacks_summary">Наборы значков не установлены</string>
+  <string name="dialog_pick_iconpack_title">Выберите набор значков</string>
+  <string name="default_iconpack_title">Значки по умолчанию</string>
+  <string name="slim_recents_corner_radius_title">Радиус закругления карточки</string>
+  <string name="slim_recents_nr_empty_drawable_title">NucleaRom empty recents</string>
+  <string name="slim_recents_nr_empty_drawable_summary">Показывать картинку AICP, когда список недавних приложений пуст</string>
+  <!-- ATTENTION: RTL languages need to replace left with right -->
+  <string name="recent_panel_lefty_mode_title">Отображать слева</string>
+  <string name="recent_panel_lefty_mode_summary">Отображать панель недавних приложений слева</string>
+  <string name="profile_choose_app">Выбрать приложение</string>
+  <string name="dialog_delete_title">Удалить</string>
+  <string name="dialog_delete_message">Удалить выбранный элемент?</string>
+  <string name="slim_blacklist_apps_cat_title">Чёрный список</string>
+  <string name="slim_blacklist_apps_title">Черный список приложений</string>
+  <string name="slim_blacklist_apps_summary">Скрытые в панели приложения</string>
+  <string name="slim_blacklist_add_apps_title">Добавить приложение</string>
+  <string name="slim_blacklist_add_apps_summary">Нажмите здесь, чтобы добавить, нажмите на добавленное приложение, чтобы удалить его</string>
+  <!-- Slim Recent App Sidebar  -->
+  <string name="recent_app_sidebar_title">Боковая панель недавних приложений</string>
+  <string name="recent_app_sidebar_summary">Отображать значки приложений с другого края</string>
+  <string name="use_recent_app_sidebar_title">Включить боковую панель приложений</string>
+  <string name="use_recent_app_sidebar_summary">Отображать значки приложений с другого края</string>
+  <string name="recent_app_sidebar_content_title">Содержимое боковой панели</string>
+  <string name="recent_app_sidebar_content_summary">Настроить содержимое боковой панели приложений</string>
+  <string name="recent_app_sidebar_style_title">Вид боковой панели</string>
+  <string name="recent_app_sidebar_style_summary">Изменить вид боковой панели</string>
+  <string name="recent_app_sidebar_hide_labels_title">Скрыть подписи значков</string>
+  <string name="recent_app_sidebar_label_color_title">Цвет подписи значков</string>
+  <string name="recent_app_sidebar_bg_color_title">Цвет фона</string>
+  <string name="recent_app_sidebar_scale_title">Размер</string>
+  <string name="recent_app_sidebar_open_simultaneously_title">Открывать одновременно с панелью недавних приложений</string>
+  <string name="recent_app_sidebar_open_simultaneously_summary">Уменьшить задержки при открытии панели недавних приложений, отключив это</string>
+  <!-- Slim recents membar -->
+  <string name="slim_recents_mem_display_category_title">Шкала использования ОЗУ</string>
+  <string name="slim_recents_mem_display_title">Показывать шкалу использования ОЗУ</string>
+  <string name="slim_recents_mem_display_summaryOn">Включить отображение шкалы использования ОЗУ</string>
+  <string name="slim_recents_mem_display_summaryOff">Отключить отображение шкалы использования ОЗУ</string>
+  <string name="slim_recents_mem_display_color">Цвет шкалы использования ОЗУ</string>
+  <string name="slim_recents_mem_display_text_color">Цвет текста шкалы использования ОЗУ</string>
+  <!-- Statusbar Clock options -->
+  <string name="status_bar_clock_title">Параметры часов</string>
+  <string name="status_bar_show_clock_title">Показывать часы и дату</string>
+  <string name="clock_title_enable">Выравнивание</string>
+  <string name="right_clock">Часы справа</string>
+  <string name="center_clock">Часы по центру</string>
+  <string name="left_clock">Часы слева</string>
+  <string name="status_bar_clock_seconds_title">Показывать секунды</string>
+  <string name="status_bar_clock_seconds_summary">Отображение секунд рядом с часами в строке состояния</string>
+  <string name="status_bar_am_pm_title">12-часовой формат</string>
+  <string name="status_bar_am_pm_info">24-часовой формат включен</string>
+  <string name="am_pm_clock_normal">Обычный шрифт</string>
+  <string name="am_pm_clock_small">Маленький шрифт</string>
+  <string name="am_pm_clock_none">Не показывать</string>
+  <string name="clock_date_display">Дата</string>
+  <string name="clock_date_display_summary">Показывать дату перед часами</string>
+  <string name="clock_date_style">Стиль даты</string>
+  <string name="clock_date_position">Положение даты</string>
+  <string name="clock_date_format">Формат даты</string>
+  <string name="clock_date_string_edittext_title">Введённое значение должно соответствовать формату даты, например: ММ/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">Введите значение</string>
+  <string name="clock_date_right">Справа от часов</string>
+  <string name="clock_date_left">Слева от часов</string>
+  <string name="clock_date_display_none">Не показывать</string>
+  <string name="clock_date_display_small">Маленький шрифт</string>
+  <string name="clock_date_display_normal">Обычный шрифт</string>
+  <string name="clock_date_style_normal">Обычный</string>
+  <string name="clock_date_style_lowercase">Строчные</string>
+  <string name="clock_date_style_uppercase">Прописные</string>
+  <string name="clock_date_format_custom">Пользовательский java формат</string>
+  <string name="menu_cancel">Отмена</string>
+  <string name="menu_save">Сохранить</string>
+  <!-- Face unlock toggle -->
+  <string name="face_auto_unlock_title">Автоматическая разблокировка сканером лица</string>
+  <string name="face_auto_unlock_summary">Убарть экран блокировки после разблокировки сканером лица</string>
+  <!-- Screen Off animation -->
+  <string name="screen_off_animation_title">Анимация выключения экрана</string>
+  <string name="screen_off_animation_default">По умолчанию</string>
+  <string name="screen_off_animation_crt">Эффект телевизора</string>
+  <string name="screen_off_animation_scale">Масштабирование</string>
+  <!-- AOKP custom system animations -->
+  <string name="animation_title">Анимации</string>
+  <string name="system_animation_title">Системная анимация</string>
+  <string name="activity_open_title">Анимация открытия</string>
+  <string name="activity_close_title">Анимация закрытия</string>
+  <string name="task_open_title">Анимация открытия задачи</string>
+  <string name="task_close_title">Анимация закрытия задачи</string>
+  <string name="task_move_to_front_title">Анимация движения вперед</string>
+  <string name="task_move_to_back_title">Анимация движения назад</string>
+  <string name="wallpaper_open_title">Анимация открытия обоев</string>
+  <string name="wallpaper_close_title">Анимация закрытия обоев</string>
+  <string name="wallpaper_intra_open_title">Анимация открытия обоев изнутри</string>
+  <string name="wallpaper_intra_close_title">Анимация закрытия обоев изнутри</string>
+  <string name="animation_duration_title">Длительность анимации</string>
+  <string name="title_animation_no_override">Запретить переопределения приложений</string>
+  <string name="summary_animation_no_override">Запретить приложениям переопределять переходы</string>
+  <string name="animation_duration_default">По умолчанию</string>
+  <!-- Toast icon switch -->
+  <string name="toast_icon_title">Иконка всплывающего уведомления</string>
+  <string name="toast_icon_summary">Отображать иконку соответствующего приложения на всплывающем уведомлении</string>
+  <!-- Sensor block per-package -->
+  <string name="sensor_block_title">Блокировка датчиков попакетно</string>
+  <string name="sensor_block_summary">Заблокировать доступ к датчикам для некоторых приложений для экономии заряда батареи.</string>
+  <!-- IME switch -->
+  <string name="ime_switcher_notify">Уведомление о выборе метода ввода</string>
+  <string name="ime_switcher_notify_summary">Отображать уведомление переключателя метода ввода</string>
+  <!-- Qs Panel -->
+  <string name="nr_qs_title">Quick Settings Panel</string>
+  <!-- QS rows and columns -->
+  <string name="qs_layout_category_title">Разметка быстрых настроек</string>
+  <string name="qs_rows_portrait_title">Строки (портрет)</string>
+  <string name="qs_rows_landscape_title">Строки (ландшафт)</string>
+  <string name="qs_columns_portrait_title">Колонки (портрет)</string>
+  <string name="qs_columns_landscape_title">Колонки (ландшафт)</string>
+  <!-- QS Transparency -->
+  <string name="qs_panel_alpha_title">Прозрачность</string>
+  <!-- About NucleaRomReborn -->
+  <string name="about_nr_settings_title">NucleaRom</string>
+  <string name="all_nr">Всё о NucleaRom</string>
+  <string name="nr_donate_title">Денежная поддержка NucleaRom</string>
+  <string name="nr_donate_summary">Поддержать NucleaRom</string>
+  <string name="github_tn">https://github.com/NucleaRom</string>
+  <string name="nr">Ссылки</string>
+  <string name="nr_kernel_title">Основной Website</string>
+  <string name="nr_kernel_summary">Mas informacion acerca del kernel</string>
+  <string name="nr_forum_title">NucleaRom Сайт</string>
+  <string name="nr_forum_summary">Проверить Обновление</string>
+  <string name="nr_source_title">GitHub</string>
+  <string name="nr_source_summary">Исходный Код NucleaRom</string>
+  <string name="sourcebase_title">Source Base</string>
+  <string name="title_about">О NucleaRom</string>
+  <string name="changelog_title">Список изменений</string>
+  <string name="changelog_title_summary">Проверить Список Изменений</string>
+  <string name="team_nuclear">Члены NuclearTeam</string>
+  <string name="moludo">Moludo</string>
+  <string name="moludo_summary">● Основатель \n● Разработчик \n● Сопровождающий</string>
+  <string name="lozo">Lozo</string>
+  <string name="lozo_summary">● Разработчик \n● Сопровождающий </string>
+  <string name="acuicultor">Acuicultor</string>
+  <string name="acuicultor_summary">● Разработчик \n● Сопровождающий</string>
+  <string name="ordenkrieger">OrdenKrieger</string>
+  <string name="ordenkrieger_summary">● Разработчик \n● Сопровождающий \n● Дизайнер</string>
+  <string name="devs_title">Разработчики Nucleare</string>
+  <string name="nr_sourcebase">LineageOS</string>
+  <string name="nr_sourcebase_sumary">https://github.com/LineageOS</string>
+  <string name="nuclear_web_title">Nuclear Сайт</string>
+  <string name="nuclear_web_summary">Основной Сайт Nuclear Team, Посетите сейчас!</string>
+  <string name="nuclear_status">NucleaRom Статус</string>
+  <!-- Changelog -->
+  <string name="changelog_nuclear_title">Список Изменений последне</string>
+  <string name="changelog_nuclear_summary">Посмотреть последние изменения ROM</string>
+  <string name="changelog_nr_error">Не удается загрузить список изменений</string>
+  <!-- The Drill -->
+  <string name="nuclear_drill_title">Послание от разработчиков</string>
+  <string name="drill_summary">Лог или GTFO</string>
+  <!-- MTP Dirty Hack -->
+  <string name="enable_mtp_dirtyhack_title">MTP по умолчанию</string>
+  <string name="enable_mtp_dirtyhack_summary">Передача файлов вместо зарядки при подключении к ПК</string>
+  <!-- QS Tiles -->
+  <string name="qs_columns_title">Колонки</string>
+  <string name="qs_small_tiles_title">Количество маленьких плиток</string>
+  <!-- Navigation -->
+  <string name="navbar_title">Панель навигации</string>
+  <string name="navbar_summary">Smartbar/Fling</string>
+  <!-- DUI -->
+  <string name="navbar_interface_title">Интерфейс</string>
+  <string name="navbar_size">Размер панели навигации</string>
+  <string name="navbar_mode">Режим навигации</string>
+  <string name="navbar_mode_summary">Выберите режим навигации, который будет использоваться на устройстве</string>
+  <string name="navbar_visibility">Включить панель навигации</string>
+  <string name="navigationbar_settings_title">Панель навигации</string>
+  <string name="navigationbar_settings_summary">Настройка стиля и поведения навигации</string>
+  <string name="navbar_general_title">Дополнительные функции</string>
+  <string name="navigation_bar_left_title">Режим левши</string>
+  <string name="navigation_bar_left_summary">Отображать панель навигации слева в альбомной ориентации экрана</string>
+  <string name="smartbar_interface">Smartbar</string>
+  <string name="icon_pack_picker_dialog_title">Набор иконок</string>
+  <string name="image_exceeds_max_allowed_size">Разрешение изображения не должно превышать 512x512</string>
+  <string name="invalid_icon_from_uri">Не удается загрузить изображения от поставщика изображений</string>
+  <string name="default_settings">Настройки по умолчанию</string>
+  <string name="default_settings_summary">Панель навигации AOSP по умолчанию</string>
+  <!-- Actions dialog and default task values set in ActionPreference xml-->
+  <string name="choose_action_title">Выберите действие</string>
+  <string name="action_entry_default_action">Настройки по умолчанию</string>
+  <string name="action_entry_select_app">Выбор приложения</string>
+  <string name="action_entry_custom_action">Выберите пользовательское действие</string>
+  <string name="action_value_default_action" translatable="false">по умолчанию</string>
+  <string name="action_value_select_app" translatable="false">Приложение</string>
+  <string name="action_value_custom_action" translatable="false">custom</string>
+  <string name="action_value_back" translatable="false">task_back</string>
+  <string name="action_value_home" translatable="false">task_home</string>
+  <string name="action_value_search_assist" translatable="false">task_assist</string>
+  <string name="action_value_recent_apps" translatable="false">task_recents</string>
+  <string name="action_value_voice_search" translatable="false">task_voice_search</string>
+  <string name="action_value_menu" translatable="false">task_menu</string>
+  <!-- Fling -->
+  <string name="fling_settings">Настройки Fling</string>
+  <string name="fling_settings_summary">Очень уникальная и настраиваемая, основанная на управлении жестами, панель навигации</string>
+  <string name="fling_interface">Fling</string>
+  <string name="fling_enable_title">Включить Fling</string>
+  <string name="fling_back_home_policy">\"Назад\" и \"Домой\" должны быть установлены всегда. Чтобы изменить назначение \"Назад\" или \"Домой\", сначала установите нужное назначение.\n\nТакже настройка двойного нажатия немного замедлит одиночное нажатие.</string>
+  <string name="fling_split_bar_policy">Когда назначено действие только справа или слева, оно выполняется на всей панели.</string>
+  <string name="fling_def_summary">Действия не установлены</string>
+  <string name="fling_swipe_actions">Жесты свайпов</string>
+  <string name="fling_tap_actions">Жесты нажатия</string>
+  <string name="fling_short_swipe_right">Короткий свайп вправо</string>
+  <string name="fling_short_swipe_left">Короткий свайп влево</string>
+  <string name="fling_long_swipe_right">Долгий свайп вправо</string>
+  <string name="fling_long_swipe_left">Долгий свайп влево</string>
+  <string name="fling_right_up_swipe">Свайп вверх справа</string>
+  <string name="fling_left_up_swipe">Свайп вверх слева</string>
+  <string name="fling_single_tap">Короткое нажатие справа</string>
+  <string name="fling_double_tap">Двойное нажатие справа</string>
+  <string name="fling_long_press">Длительное нажатие справа</string>
+  <string name="fling_single_left_tap">Короткое нажатие слева</string>
+  <string name="fling_double_left_tap">Двойное нажатие слева</string>
+  <string name="fling_long_left_press">Длительное нажатие слева</string>
+  <string name="long_swipe_portrait_title">Портретная ориентация</string>
+  <string name="long_swipe_landscape_title">Ландшафтная ориентация</string>
+  <string name="portrait_right_swipe_title">Свайп с правой стороны в портретном режиме</string>
+  <string name="portrait_left_swipe_title">Свайп с левой стороны в портретном режиме</string>
+  <string name="landscape_right_swipe_title">Свайп с правой стороны в ландшафтном режиме</string>
+  <string name="landscape_left_swipe_title">Свайп с левой стороны в ландшафтном режиме</string>
+  <string name="vertical_up_swipe_title">Вертикальный свайп вверх</string>
+  <string name="vertical_down_swipe_title">Вертикальный свайп вниз</string>
+  <string name="up_swipe_title">Свайп вверх</string>
+  <string name="down_swipe_title">Свайп вниз</string>
+  <string name="long_swipe_reset">Сбросить</string>
+  <string name="fling_advanced">Дополнительные функции</string>
+  <string name="fling_long_swipe_title">Порог длинного свайпа</string>
+  <string name="fling_long_swipe_summary">Тонкая настройка порога длинного свайпа основана на проценте ширины или высоты интерфейса Fling</string>
+  <string name="fling_trails_enable_title">Включить следы жестов</string>
+  <string name="fling_trails_enable_summary">Показать след от жестов свайпов</string>
+  <string name="fling_trails_color_title">Цвет следа</string>
+  <string name="fling_trails_width_title">Ширина следа</string>
+  <string name="fling_appearance">Вид</string>
+  <string name="fling_show_logo_title">Показывать логотип Fling</string>
+  <string name="fling_animate_logo_title">Анимация логотипа</string>
+  <string name="fling_animate_logo_summary">Анимированный логотип при нажатиях</string>
+  <string name="fling_logo_color">Цвет логотипа</string>
+  <string name="fling_logo_custom_logo_pick_title">Пользовательская иконка логотипа</string>
+  <string name="fling_logo_custom_logo_image_pick_title">Пользовательская картинка логотипа</string>
+  <string name="fling_logo_custom_logo_reset_title">Сбросить иконку логотипа</string>
+  <string name="fling_show_ripple_title">Отображать пульсацию</string>
+  <string name="fling_show_ripple_summary">Эффект пульсаций при нажатиях</string>
+  <string name="fling_ripple_color">Цвет пульсации</string>
+  <string name="fling_longpress_timeout_label_left">Меньшая задержка</string>
+  <string name="fling_longpress_timeout_label_right">Большая задержка</string>
+  <string name="fling_longpress_title">Задержка длительного нажатия</string>
+  <string name="fling_longpress_summary">Увеличить или уменьшить время, необходимое для длительного нажатия</string>
+  <string name="fling_keyboard_cursors_title">Динамическое действие курсора клавиатуры</string>
+  <string name="fling_keyboard_cursors_summary">Double tap left and right actions becomes left and right keyboard cursor actions if keyboard is open</string>
+  <string name="fling_logo_opacity_title">Прозрачность логотипа Fling</string>
+  <!-- Pulse navigation bar music visualizer -->
+  <string name="pulse_help_policy_notice_summary">Pulse не работает с некоторыми источниками аудио во время прослушивания через динамик</string>
+  <string name="pulse_settings">Pulse</string>
+  <string name="pulse_settings_summary">Аудиовизуализация в панели навигации</string>
+  <string name="fling_show_pulse_title">Включить Pulse</string>
+  <string name="fling_show_pulse_summary">Включить аудиовизуализацию в панели навигации</string>
+  <string name="pulse_render_mode_title">Режим аудиовизуализации</string>
+  <string name="pulse_render_mode_fading_bars">Затухающие блоки</string>
+  <string name="pulse_render_mode_solid_lines">Сплошные линии</string>
+  <string name="fling_pulse_color">Цвет Pulse</string>
+  <string name="fling_pulse_color_summary">Используется также как резерв для автоматического подбора цвета</string>
+  <string name="eos_fling_lavalamp_title">Включить \"Лава Лампу\"</string>
+  <string name="eos_fling_lavalamp_summary">Включить плавно меняющиеся цвета Pulse</string>
+  <string name="pulse_advanced_category">Дополнительные функции</string>
+  <string name="pulse_legacy_mode_advanced_category">Настройки режима затухающих блоков</string>
+  <string name="pulse_custom_fudge_factor">Уровень вменяемости</string>
+  <string name="lavamp_solid_speed_title">Скорость \"Лава Лампы\"</string>
+  <string name="pulse_solid_units_count">Количество сплошных линий</string>
+  <string name="pulse_solid_lines_count">Количество сплошных линий</string>
+  <string name="pulse_solid_units_opacity">Прозрачность сплошных линий</string>
+  <string name="pulse_solid_dimen_category">Настройки режима сплошных линий</string>
+  <string name="pulse_custom_buttons_opacity_title">Прозрачность кнопок Smartbar в режиме Pulse</string>
+  <string name="pulse_auto_color_title">Автоматический цвет Pulse</string>
+  <string name="pulse_auto_color_summary">Цвет зависит от обложки альбома. Переопределяет прозрачность \"Лава Лампы\" и сплошных линий.</string>
+  <!-- Pulse config -->
+  <string name="pulse_custom_dimen">Ширина</string>
+  <string name="pulse_custom_div">Интервал</string>
+  <string name="pulse_filled_block_size">Размер блоков</string>
+  <string name="pulse_empty_block_size">Расстояние между блоками</string>
+  <!-- Navbar height -->
+  <string name="navigation_bar_size_title">Размер панели навигации</string>
+  <string name="portrait_title">Высота в портретной ориентации</string>
+  <string name="land_vert_title">Ширина в ландшафтной ориентации</string>
+  <string name="land_hor_title">Высота в ландшафтной ориентации</string>
+  <string name="positive_done">Готово</string>
+  <!-- SmartBar -->
+  <string name="smartbar_category">SmartBar</string>
+  <string name="smartbar_settings_title">Настройки SmartBar</string>
+  <string name="smartbar_settings_summary">Полностью настраиваемая панель навигации</string>
+  <string name="smartbar_editor_title">Запустить режим редактирования</string>
+  <string name="smartbar_editor_summary">Открыть редактор кнопок Smartbar</string>
+  <string name="smartbar_help_policy_notice_summary">Находясь в режиме редактирования, нажмите, удерживая средне, и перетащите кнопку, чтобы изменить её положение, или нажмите, удерживая долго, кнопку для отображения меню редактирования. Положение кнопки могут быть изменено, во время отображения меню.\n\nНастройка двойного нажатия немного замедлит одиночное нажатие.</string>
+  <string name="smartbar_context_menu_position_title">Позиция контекстных кнопок</string>
+  <string name="smartbar_context_menu_position_summary">Задать положение контекстных кнопок, таких как меню и выбор способа ввода</string>
+  <string name="smartbar_right">Справа</string>
+  <string name="smartbar_left">Слева</string>
+  <string name="smartbar_button_animation_title">Анимация нажатия кнопок</string>
+  <string name="smartbar_button_animation_summary">Задать стиль анимации основных кнопок при нажатии</string>
+  <string name="smartbar_button_animation_ripple">Пульсация</string>
+  <string name="smartbar_button_animation_spring">Пружина</string>
+  <string name="smartbar_button_animation_flip">Переворот</string>
+  <string name="smartbar_button_animation_pixel">Pixel (все кнопки)</string>
+  <string name="smartbar_button_animation_pixel_home">Pixel (только кнопка \"Домой\")</string>
+  <string name="smartbar_button_animation_pixel_home_ripple">Pixel (только кнопка \"Домой\") и пульсация</string>
+  <string name="smartbar_factory_reset_title">Сбросить к настройкам по умолчанию</string>
+  <string name="smartbar_factory_reset_confirm">Вы уверены, что хотите сбросить SmartBar к настройкам по умолчанию?</string>
+  <string name="smartbar_ime_action_title">Параметры метода ввода</string>
+  <string name="smartbar_ime_action_summary">Установить, какие кнопки будут показаны при отображании клавиатуры или проигрывании музыки</string>
+  <string name="smartbar_ime_action_none">–</string>
+  <string name="smartbar_ime_action_arrows">Стрелки ввода</string>
+  <string name="smartbar_ime_action_switcher">Переключатель клавиатуры</string>
+  <string name="smartbar_ime_action_dynamic">Стрелки ввода/медиа</string>
+  <string name="smartbar_backup_current_config_title">Сохранить профиль</string>
+  <string name="smartbar_restore_config_title">Восстановить профиль</string>
+  <string name="smartbar_config_name_edit_dialog_title">Название профиля Smartbar</string>
+  <string name="smartbar_config_name_edit_dialog_message">Введите название или оставьте поле пустым</string>
+  <string name="smartbar_config_dialog_title">Профили Smartbar</string>
+  <string name="smartbar_config_backup_success_toast">Профиль Smartbar успешно сохранен</string>
+  <string name="smartbar_config_restore_success_toast">Профиль Smartbar успешно восстановлен</string>
+  <string name="smartbar_config_backup_error_toast">Ошибка при сохранении профиля Smartbar</string>
+  <string name="smartbar_config_restore_error_toast">Ошибка при восстановлении профиля Smartbar</string>
+  <string name="navbar_buttons_alpha_title">Прозрачность кнопки</string>
+  <string name="smartbar_longpress_delay_title">Задержка длительного нажатия на кнопку</string>
+  <string name="smartbar_longpress_delay_summary">Укажите, как долго система будет ждать, прежде чем реагировать на долгое нажатие</string>
+  <string name="smartbar_longpress_delay_default">Задержка по умолчанию (быстро)</string>
+  <string name="smartbar_longpress_delay_normal">Обычная задержка</string>
+  <string name="smartbar_longpress_delay_long">Длинная задержка</string>
+  <string name="smartbar_custom_icon_size_title">Размер пользовательских иконок</string>
+  <string name="one_handed_mode_title">Режим \"Управление одной рукой\"</string>
+  <string name="one_handed_mode_summary">Позволяет свайпом по панели навигации включать режим \"Управление одной рукой\"</string>
+  <string name="smartbar_double_tap_sleep_title">Двойное нажатие для сна</string>
+  <string name="smartbar_double_tap_sleep_summary">Двойное нажатие на пустую область панели навигации для сна</string>
+  <!-- Dynamic Navbar -->
+  <string name="navbar_dynamic_title">Динамический цвет панели навигации</string>
+  <string name="navbar_dynamic_summary">Изменять цвет панели навигации в зависимости от основного цвета приложения</string>
+  <string name="restart_app_required">Требуется перезапуск приложения</string>
+  <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Умные пиксели</string>
+  <string name="smart_pixels_summary">Экономить заряд батареи, выключая дополнительные пиксели</string>
+  <string name="smart_pixels_enable_title">Включить умные пиксели</string>
+  <string name="smart_pixels_enable_summary">Выключить пиксели для снижения расхода заряда батареи</string>
+  <string name="smart_pixels_on_power_save_title">Включать автоматически при экономии заряда</string>
+  <string name="smart_pixels_on_power_save_summary">Включить умные пиксели, когда включен режим экономии заряда</string>
+  <string name="smart_pixels_percent">Процент пикселей для отключения</string>
+  <string name="smart_pixels_shift_title">Защита от выгорания</string>
+  <string name="smart_pixels_shift_summary">Предотвращение выгорания на OLED устройствах благодаря перемещению пикселей с такой частотой</string>
+</resources>
